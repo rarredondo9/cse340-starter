@@ -105,12 +105,10 @@ footer {
 /******* Main ********/
 
 #delorean {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  justify-content: center;
   margin-top: 20px;
-  margin-right: 75%;
   color: #01b0d3;
 }
 
@@ -119,12 +117,28 @@ footer {
 }
 
 #delorean img {
-  max-width: 100%;
+  width: 700px;
   height: auto;
+  position: relative;
+  z-index: 1;
 }
 
 .delorean-description {
-  margin-top: 10px;
+  position: absolute;
+  top: 20px; 
+  left: 20%;
+  transform: translateX(-50%);
+  padding: 15px;
+  width: 250px; 
+  background: rgba(255, 255, 255, 0.9); 
+  border-radius: 8px; /* Rounded corners for a more modern look */
+  z-index: 2;
+  text-align: center;
+}
+
+.delorean-description ul {
+  list-style: none;
+  padding: 0;
 }
 
 .button-own {
@@ -156,8 +170,10 @@ footer {
 
 .upgrade-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); 
   gap: 10px;
+  justify-items: center;
+  background-color: #01b0d3;
 }
 
 .upgrade-img {
@@ -173,6 +189,16 @@ footer {
   margin-bottom: 5px;
 }
 
+.upgrade-img p {
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .upgrade-img img {
+    width: 70px;
+    height: 70px;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   body {
