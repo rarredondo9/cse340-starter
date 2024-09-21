@@ -37,7 +37,7 @@ a:hover {
 }
 
 button {
-  background-color: #01b0d3;
+  background-color: #333;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -125,13 +125,14 @@ footer {
 
 .delorean-description {
   position: absolute;
-  top: 20px; 
+  top: 20px;
   left: 20%;
   transform: translateX(-50%);
   padding: 15px;
-  width: 250px; 
-  background: rgba(255, 255, 255, 0.9); 
-  border-radius: 8px; /* Rounded corners for a more modern look */
+  width: 250px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333; 
+  border-radius: 8px;
   z-index: 2;
   text-align: center;
 }
@@ -143,7 +144,7 @@ footer {
 
 .button-own {
   display: inline-block;
-  background-color: #01b0d3;
+  background-color: #333;
   color: white;
   padding: 10px 20px;
   margin-top: 10px;
@@ -173,7 +174,8 @@ footer {
   grid-template-columns: repeat(2, 1fr); 
   gap: 10px;
   justify-items: center;
-  background-color: #01b0d3;
+  background-color: #333;
+  color: white; 
 }
 
 .upgrade-img {
