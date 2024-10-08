@@ -231,7 +231,7 @@ footer {
 }
 
 .btn {
-  background-color: #01b0d3;
+  background-color: #01242b;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -244,6 +244,11 @@ footer {
 
 .btn:hover {
   background-color: #0193b3;
+}
+footer a {
+  color: #000;   
+  text-decoration: none;  
+  font-weight: bold;        
 }
 
 @media only screen and (min-width: 768px) {
